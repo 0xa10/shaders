@@ -70,7 +70,7 @@ void main() {
 
   vec3 lines;
   lines += colorize(vec3(0.660, 0.626, 0.579), top_line);
-  lines += colorize(vec3(00.660, 0.626, 0.579), bottom_line);
+  lines += colorize(vec3(0.660, 0.626, 0.579), bottom_line);
   lines += colorize(vec3(0.970, 0.948, 0.776), corner_fold);
   lines += colorize(vec3(0.980, 0.902, 0.803), vertical_line);
   lines += colorize(vec3(0.970, 0.922, 0.922), horizontal_line);
@@ -93,8 +93,8 @@ void main() {
   circles += colorize(vec3(0.985, 0.724, 0.771), left_circle);
   circles += colorize(vec3(0.925, 0.536, 0.562), right_circle);
   // Triangle
-  vec3 the_triangle = colorize(vec3(0.203, 0.585, 0.130),
-    triangle(0.140, st - vec2(0.040, -0.260)));
+  vec3 the_triangle = colorize( vec3(0.203, 0.585, 0.130),
+                                triangle(0.140, st - vec2(0.040, -0.260)));
   //drawing += a_line;
   //drawing += a_second_line;
   //drawing += rectangles;
