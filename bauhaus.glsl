@@ -95,10 +95,6 @@ void main() {
   // Triangle
   vec3 the_triangle = colorize( vec3(0.203, 0.585, 0.130),
                                 triangle(0.140, st - vec2(0.040, -0.260)));
-  //drawing += a_line;
-  //drawing += a_second_line;
-  //drawing += rectangles;
-  float color;
 
   vec3 base = vec3(0.797, 0.800, 0.635); // Base color
   vec3 drawing = base;
@@ -106,6 +102,7 @@ void main() {
   drawing -= the_triangle;
   drawing -= rectangles;
   drawing -= lines;
+
   gl_FragColor = vec4(drawing, 1.0);
 }
 
